@@ -4,8 +4,7 @@ import Webcam from 'react-webcam';
 import Link from 'next/link';
 
 
-// You can add your icons as components or use an icon library like Material-UI or Font Awesome
-import { Close, FlashlightOn } from '@mui/icons-material'; // Adjust based on what you use
+import { Close, FlashlightOn } from '@mui/icons-material'; 
 import { Button } from '@mui/material';
 
 const CameraPage = () => {
@@ -22,7 +21,6 @@ const CameraPage = () => {
 
   const handleFlashToggle = () => {
     setFlashOn(!flashOn);
-    // Flash toggle logic can be implemented here, depending on your app's requirements
   };
 
   const handleUploadFromGallery = () => {
@@ -61,7 +59,7 @@ const CameraPage = () => {
             screenshotFormat="image/jpeg"
             width="100%"
             videoConstraints={{
-              facingMode: "environment", // Use rear camera
+              facingMode: "environment", 
             }}
             style={{ 
               border: '2px solid #fff', 
